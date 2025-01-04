@@ -1,0 +1,227 @@
+.custom-navbar {
+  color: white;
+  padding: 1rem 0; /* Použití rem pro flexibilitu */
+  height: 5rem;
+}
+
+.shopping-cart {
+  height: 2.5rem;
+}
+
+.navbar-brand .brand-photo {
+  height: 6rem; /* Relativní výška */
+}
+
+.navbar-center-logo .center-logo {
+  height: 3rem;
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: #f10000;
+  margin-right: 1rem; /* Flexibilní mezery */
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  transform: scale(1.05);
+}
+
+
+
+.cart-link .cart-count {
+  color: red;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.fullscreen-modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
+}
+
+.footer {
+  color: #7b1fa2;
+  padding: 1.5rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 0.5rem;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  margin: 0 0.5rem;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+@media (max-width: 1024px) {
+  .custom-navbar {
+    height: 4rem;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand .brand-photo {
+    height: 5rem;
+  }
+
+  .navbar-center-logo .center-logo {
+    height: 2.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-navbar {
+    height: 3rem;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand .brand-photo {
+    height: 4rem;
+  }
+
+  .navbar-center-logo .center-logo {
+    height: 2rem;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .social-icons img {
+    margin: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-navbar {
+    height: 2.5rem;
+    padding: 0.25rem 0;
+  }
+
+  .navbar-brand .brand-photo {
+    height: 3rem;
+  }
+
+  .navbar-center-logo .center-logo {
+    height: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+  }
+}
+
+/* Nové styly pro ikony a nadpisy */
+.nav-item {
+  margin-bottom: 1rem;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Maximální šířka pro obě ikony s nadpisy */
+  margin: 0 auto;
+  gap: 2rem; /* Mezera mezi ikonami */
+}
+
+.icon-with-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  /* Umožňuje nadpisům být ve středu */
+  margin-bottom: 1rem;  /* Mezera mezi každým odkazem */
+}
+
+.icon-with-text h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;  /* Velikost nadpisu */
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.icon-with-text h5:hover {
+  color: #007bff;  /* Změní barvu při najetí na nadpis */
+}
+
+.Link-produkty, .ikona-prihlaseni {
+  width: 200px;  /* Nastavení velikosti ikony */
+  height: auto;
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.Link-produkty:hover, .ikona-prihlaseni:hover {
+  transform: scale(1.1);  /* Zvětšení ikony při najetí */
+  filter: brightness(1.2);  /* Zvětšení jasu při najetí */
+}
+
+/* Pro všechny odkazy ve spodním menu */
+
+.menu-button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ba68c8, #ce93d8); /* Gradient barva */
+  color: white;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none; /* Odstraní rámeček */
+}
+
+.menu-button:hover {
+  background: #d1c4e9; /* Světlejší pozadí při hoveru */
+  transform: translateY(-3px) scale(1.05); /* Efekt zvýšení */
+  box-shadow: none;
+}
+
+.menu-button:focus {
+  outline: none; /* Odstraní výchozí rámeček při zaostření */
+}

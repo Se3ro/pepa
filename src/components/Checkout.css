@@ -1,0 +1,66 @@
+/* Styling for the checkout form */
+.checkout {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.checkout .progress-bar {
+  height: 5px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.checkout .progress {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout input, .checkout select {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkout .submit-btn, .checkout .next-step-btn, .checkout .prev-step-btn {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout .submit-btn:disabled, .checkout .next-step-btn:disabled, .checkout .prev-step-btn:disabled {
+  background-color: #ddd;
+}
+
+.checkout .submit-btn:hover, .checkout .next-step-btn:hover, .checkout .prev-step-btn:hover {
+  background-color: #45a049;
+}
+
+.checkout .error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}

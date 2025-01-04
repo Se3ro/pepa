@@ -1,0 +1,168 @@
+/* Základní container pro košík */
+.cart-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Nadpis */
+.cart-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Sekce pro položky košíku */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Karta jednotlivé položky v košíku */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-item-details {
+  flex-grow: 1;
+  padding-left: 15px;
+}
+
+.cart-item-details h4 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.cart-item-details p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.cart-item-details .old-price {
+  text-decoration: line-through;
+  color: #e0e0e0;
+  margin-right: 10px;
+}
+
+.cart-item-details .new-price {
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.remove-item-button {
+  background: transparent;
+  border: none;
+  color: #d32f2f;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.remove-item-button:hover {
+  color: #b71c1c;
+}
+
+/* Sekce pro souhrn košíku */
+.cart-summary {
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.cart-summary h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.promo-section {
+  margin-top: 15px;
+}
+
+.promo-input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 60%;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.apply-promo-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-promo-button:hover {
+  background-color: #388e3c;
+}
+
+.promo-success {
+  color: #388e3c;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.checkout-button {
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.checkout-button:hover {
+  background-color: #1565c0;
+}
+
+/* Pro responsivitu */
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .cart-summary {
+    padding: 15px;
+  }
+
+  .promo-input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .apply-promo-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

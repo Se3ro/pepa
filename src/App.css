@@ -1,0 +1,53 @@
+/* Reset základních stylů */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Playfair Display', serif; /* Nastavení základního fontu pro celý web */
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden; background: linear-gradient(to bottom, #e0f7fa, #fce4ec);
+  transition: background 0.5s ease-in-out;
+ 
+}
+
+/* Globální třídy */
+.container {
+
+  max-width: 5000px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+/* Breakpoints pro responzivitu */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+}
+/* Hlavní obsah stránky */
+.main-content {
+  flex: 1;
+  padding-top: 90px; /* Výška Navbaru */
+}
+/* Použití Anton fontu pro nadpisy */
+h1, h2, h3, h4 ,h5{
+  font-family: 'Anton', sans-serif;
+}

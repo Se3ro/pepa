@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .home-container {
+    padding: 20px;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .productDetails {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .productPrice {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .icon-container .icon {
+    font-size: 1.5rem;
+    margin: 0 10px;
+  }
+  

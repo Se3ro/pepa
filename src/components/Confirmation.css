@@ -1,0 +1,62 @@
+/* Confirmation.css */
+.confirmation {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .confirmation h2 {
+    font-size: 2rem;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .confirmation p {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .confirmation h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .confirmation .icon {
+    margin-right: 8px;
+    color: #007bff;
+  }
+  
+  .confirmation .confirmation-details {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .confirmation .confirmation-details li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .confirmation .confirmation-details li p {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  
+  .confirmation .confirmation-details li .icon {
+    font-size: 1.3rem;
+  }
+  
+  .confirmation .confirmation-details li span {
+    font-weight: bold;
+    color: #333;
+  }
+  

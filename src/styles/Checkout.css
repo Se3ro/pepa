@@ -1,0 +1,58 @@
+.checkout-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .checkout-container h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .checkout-container li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .checkout-container p {
+    text-align: center;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .checkout-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .checkout-container input,
+  .checkout-container select {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .checkout-container .btn-submit {
+    background-color: #007bff;
+    border-color: #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .checkout-container .btn-submit:hover {
+    background-color: #0056b3;
+  }
